@@ -1,0 +1,67 @@
+From Video 'Buisiness Case For DevOps' week 1 lecture 2:
+    - Technology is the enabler of innovation it is not the driver of innovation.
+    - DevOps is a methodology that integrates and automates the work of software development and IT operations. It is a set of practices and tools that aims to improve and shorten the systems development life cycle. DevOps is a combination of development (Dev) and operations (Ops) and is used to refer to the practice of developing and delivering software in a more efficient and reliable way.
+
+From video 'DevOps Adoption' week 1 lecture 3:
+    - Pretty much just re iterated that DevOps is a cultural change that requires trust, transparency and discipline across teams 
+
+From Video 'Definition of DevOps' week 1 lecture 4:
+-DevOps: 
+    DevOps is a methodology in the software development and IT industry. Used as a set of practices and tools, DevOps integrates and automates the work of software development and IT operations as a means for improving and shortening the systems development life cycle.
+DevOps requires:
+    - A change in culture and mindset
+    - A new application design that doesnt rely on monolithic architecture. doesnt require entire systems to be redeployed just to add a single function.
+    - Automation that accelerates and streamlines the development process and reduces the risk of human error. utilizing cloud services and containers (ASSUMING)
+    - Programmable Platform that allows for the automation of the entire infrastructure and application deployment process.You cannot be waiting days or weeks for somebody to provision a server and configure that server so that you can deploy your application
+    - A focus on continuous integration and continuous delivery (CI/CD) to ensure that code is always in a deployable state.
+
+DevOps is NOT: 
+    - Not simply combining development and operations teams
+    - Not a separate team or role
+    - Not a tool or technology many tools and technologies are used in DevOps, but DevOps is not a tool or technology itself
+    - No one size fits all DevOps is not a one-size-fits-all solution. It is a set of practices and tools that can be adapted to the specific needs of an organization.
+    - Not just about automation DevOps is about culture, automation, measurement, and sharing. Automation is a key part of DevOps, but it is not the only part.
+
+What is DevOps? 
+    - DevOps is a set of practices and tools that aims to improve and shorten the systems development life cycle. It is a methodology that integrates and automates the work of software development and IT operations. DevOps is a combination of development (Dev) and operations (Ops) and is used to refer to the practice of developing and delivering software in a more efficient and reliable way. DevOps is a culture, a set of practices, and a set of tools that aims to improve and shorten the systems development life cycle. It is a methodology that integrates and automates the work of software development and IT operations. DevOps is a combination of development (Dev) and operations (Ops) and is used to refer to the practice of developing and delivering software in a more efficient and reliable way.
+
+    From the course: 
+        DevOps is a cultural change in which the development team and operations engineers work together during the entire development cycle.
+
+From Video 'Definition of DevOps' week 1 lecture 5:
+    - What is the goal? 
+        - agility is the goal 
+        - smart expermintation
+        - moving in the market 
+        - with maximum velocity and minimum risk
+        - gaining quick, valuable insights 
+    - 3 Pillars of agility 
+        - DevOps: cultural change automated pipeline infrastructure as code immutable infrastructure
+        - microservices: loosely coupled microservices bounded by restAPIs designed to resist failures tested by breaking them and failing fast 
+        - containers: developer-centric environments that give us portability and fast startup. They also enable an ecosystem that allows quick deploys with immutable infrastructure (throw away and replace)
+    - 3 Dimensions of DevOps
+        - Culture (most important)
+        - Method
+        - Tools
+    
+    The evolution and relationship of DevOps, Microservices, and Containers:
+    Waterfall > Agile > DevOps: Waterfall, Agile, and DevOps are methods for software development and delivery.
+
+    Monoliths > SOA > Microservices: Monoliths, SOA, and Microservices are architecture: ways that software is built.
+
+    Physical Services > VMS > Containers: Physical Services, VMS, and Containers are used to create infrastructure: basic services such as communication and storage.
+
+    Summary: 
+    - you have DevOps for speed and agility, microservices for small deploys, and containers for ephemeral(short) run times with fast startup. 
+
+From Video 'Leading up to DevOps' week 1 lecture 6:
+    - Leading up to DevOps architects would work form months designing systems on paper 
+    - development phase a dev team would work for months or years to develop the code and on features 
+    - testing phase where all the code would be tested and sent back to development for fixes until it was ready for deployment
+    - at some point the code is sent to operations to be deployed this is months or years after the initial design phase
+    - ops would take forever to deploy 
+    Summary: 
+        - Traditional Waterfall development creates problems such as delays, frustration, long lead times, expensive late changes, and operations managing unfamiliar code
+
+From Video 'XP Agile and beyond' week 1 lecture 7:
+    - Extreme programming was intended to improve software quality and responsiveness to changing customer requirements. It emphasized concepts like pair programming. I encourage you to try pair programming. It gets two sets of eyes on every line of code and helps cross-train your team with skills. For example, a person who really knows Python will pair with one who is just learning Python. They work together and the junior programmer gets to see how the senior programmer approaches the problem. Pair programming is a great way of mixing the skills in your team and getting everyone under the same code to understand it
