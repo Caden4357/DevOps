@@ -1,0 +1,73 @@
+From Video 'taylorism and working in silos' week 3 lecture 1:
+    - This is about how people work in traditional western jobs and factorys and how it doesnt work for devops
+    - one group hands off work to the next group until finally something is complete it works for an assembly line like building a car but not for devops
+    - 
+From Video 'Software engineering vs civil engineering' week 3 lecture 2:
+    - civil engineering way of doing a job doesnt work for software engineering
+    - it needs to be organic the stack is constantly being updated 
+    - new features are constantly being added 
+    - system behavior is also changing 
+    - dont complete a project and move on have the team maintain it and continue to improve it 
+    - 
+From Video 'Required devops behaviors' week 3 lecture 3:
+    - automate deployments to all environments 
+    - network design defined by application architetures
+    - epheremnal infrastrucure created for each new deployment 
+    - risk is managed through progressive activation 
+    - builds are repeatable leveraging infasctrucre as code 
+    - devs want innovation 
+    - ops wants stability 
+    - no silos and hand offs 
+    - shared ownership and high collaboration 
+    - embrace small frequent change 
+    - ephemeral infastructure as code 
+    - automated self service 
+From Video 'Infastructure as code' week 3 lecture 3:
+    - describing you infastructure in a textual format 
+    - never perform configurations manually 
+    - use version control 
+    - server drift is a major source of failure: servers kind of getting randomly updated and changed so that they drift from their original ways usually by different people 
+    - servers are cattle not pets when a server breaks you dont want to spend time trying to fix it you want to be able to spin up an identical work one right away to replace it
+    - If servers arent being used destroy them use when you need 
+    - Applications are packaged in containers 
+    - dependencies are contained inside the container and no variance limits side effects it doesnt change unless you change it 
+    - if theres corruption you can bring back the original state 
+    - never change a running container you make changes to the image then redeploy the new container 
+    - keep images up to date since theyre the template
+From Video 'Continous intergration' week 3 lecture 3:
+    - Continous intergration (CI) is the process of continuously building, testing, and integrating every developer change into the master branch after a set of tests have passed. The result is potentially deployable code. 
+    - Continuous Delivery (CD) is a series of practices designed to ensure that code can be rapidly and safely deployed to production by delivering every change to a production-like environment. it doesnt have to be the production env it could be a replica/test version of it 
+    - Push frequently (daily) working in small branhces to reduce the number of conflicting changes 
+    - the more time that passes between pushes and PRs the more likely it is that merge conflicts will happen
+    - Always do Pull requests
+    - build and test every pull request use automation to do this 
+    - tests ran after each build never merge a PR thats failing test 
+    - automate tests
+    - The master branch should ALWAYS be deployable 
+    - 
+From Video 'Continous delivery' week 3 lecture 4:
+    - The master branch should always be able to deploy 
+    - you need to know if something will break the build
+    - CI/CD like it is one word, because you need continuous integration in place before you can implement continuous delivery. You need a way to know if something will "break the build.” One way to accomplish this is by delivering every change to a production-like environment. It doesn’t have to be the actual production environment, but it should be enough like it so that the same procedure can be used to deploy to production. Along the way, there are automated gates that create a pipeline of checks such as unit testing, integration testing, quality checks, vulnerability scans, and security tests. These tests ensure the quality of the code. 
+    - When this is all set up we refer to it as a CI/CD pipeline. Like a pipeline, it is a set of tools where the output of one feeds the input of another. 
+    - You need: 
+        - A code repo
+        - a build server
+        - an intergration server 
+        - an artifact repo 
+        - automatic configuration and deployment 
+        -
+    - Plan, code, build, test, release, deploy, operate
+    5 key principles:
+        - High quality 
+        - work in small batches 
+        - computers do the repetive stuff and leave the problem solving to the people (automate)
+        - relentlessly pursure continous improvement 
+        - everyone is responsible 
+    - Continous deployment is different its about promoting to production 
+    - Deploy early and often different environments, before production several times for testing and what not 
+    - Automate deployment 
+    - you can have feature flags to turn your code on and off. Show features to different customers or for testing a bunch of reasons
+    - deployment is not one size fits all 
+From Video '' week 3 lecture 4:
+

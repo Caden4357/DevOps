@@ -1,1 +1,62 @@
 From Video 'Social Coding Principles' week 2 lecture 1:
+    - This is mainly about how pair programming and social coding are good for business 
+    - public repos and all team members are encouraged to contribute anarchy is controlled via PR
+    - Defects are found earlier 
+    - Costs are lowered 
+    - There is a broader understanding of the code base 
+    - Great opportunity to pair jr and sr devs they both learn from eachother and training gets done as well 
+
+From Video 'Git repository guidelines' week 2 lecture 2:
+    - Create a repo for every service or component (NO MONO repos)
+    - create a new branch for every issue and tear it down when its done
+    - use pr to merge back to master pr should never be merged by you its an opportunity for a code review 
+    - clone repo on your machine pull latest code  -> create a branch to work on -> push that to the branch and submit a pr 
+    - 
+
+From Video 'Working in small batches' week 2 lecture 3:
+    - This was about working in small batches to get stuff out constantly and quickly to recieve feedback and continuing to itterate based on that feedback 
+    - this is about faster feedback loops 
+
+From Video 'MVP' week 2 lecture 4:
+    - MVP is not phase 1 of a project 
+    - Its the minimal thing that you can do to test your hypothesis 
+    - MVP is about learning not delivery at the end of each MVP you should either pivot or perserve 
+
+From Video 'TDD' week 2 lecture 5:
+    - This was all about TDD and its benefits since I have notes on that in TDD folder I will leave this empty 
+
+From Video 'BDD' week 2 lecture 6:
+    - BDD focuses on the behavior of the system from the outside put simply ensures that your building the right thing while TDD ensures your building the thing right
+    - Great for intergration testing 
+    - uses Gherkin syntax 
+    - looks at the system as a consumer would 
+    - gherkin syntax: 
+        - Given: some context  
+        - When: some event happens 
+        - Then: some testable outcome 
+        - And: more context 
+
+From Video 'Cloud native microservices' week 2 lecture 7:
+    - Think differently about application design 
+    - its about a collection of small microservices all seperate from eachother connected via REST-API's
+    - microservices are stateless 
+    - each services maintains its own state in a DB or persistent object store services dont share state
+    - resilience through horizontal scaling ex. scale your notification service while not having to scale the other Services
+    - 
+
+From Video 'Designing for failure' week 2 lecture 8:
+    - Embrace failures 
+    - plan to be throttled and you have to handle that 
+    - Number of different patterns to make your app more resilient 
+    - Retry Pattern:
+        - when things are down like a DB your app doesnt immediately break your retry again and again backing off in time exponentially so you ping it again in 2 secs, then 5 secs, then 8 then 15 then eventually show the user an error 
+    - Circuit breaker Pattern 
+        - identify a problem then do something to avoid a cascading failure 
+        - a 'domino effect' kind of pattern 
+    - Bulkhead pattern:
+        - can be used to isolate failing services to limit the scope of a failure.
+        - This is a pattern where using separate thread pools can help to recover from a failed database connection by directing traffic to an alternate thread pool that’s still active. 
+    - Chaos engineering (monkey engineering)
+    - essentially testing that your software can handle issues like services going down 
+    - you cant know how something will respond to failure until it fails so this is doing that on purpose
+

@@ -1,0 +1,6 @@
+From Video 'Orgranizational-impact-of-devops' week 4 lecture 1:
+    - How devops is organized into teams over their own domains for ex. a user interface team that manages their own frontend, DB, service, etc. everyone works on everything and is accountable working on it for a long time constantly improving 
+    - 
+From Video 'There is no DevOps team' week 4 lecture 2:
+    - DevOps is the organization not a specific team 
+    - 
