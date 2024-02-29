@@ -1,0 +1,108 @@
+Virtualization:
+    Simply put, virtualization is the process of creating a software based, or virtual, version of something, whether that be compute, storage, networking, servers, or applications and what makes virtualization feasible, is something called the hypervisor.
+Hypervisor: 
+    Is a software that runs above the physical server or host they pull the resources from your server and allocate them to your environments
+
+GPT: Alright, let's imagine your computer is a big house with several empty rooms. Usually, one big family (a single operating system) lives in this house and uses all the space for its own needs. But what if you want more families (different operating systems or software environments) to live in the house without them interfering with each other? That’s where virtualization comes in.
+
+Virtualization is like renovating your house to let more families live in it independently. You split up your house (computer) into smaller apartments (virtual machines) where each family can live, work, and play without bumping into each other. Each family thinks they have their own private home, but in reality, they're all sharing the same physical house. They can have their furniture (applications), pets (data), and their little house rules (operating systems), yet they don’t interfere with the different families living in the same building.
+
+The architect and manager of this house, who splits it up and ensures everyone lives comfortably without anyone fighting over space or the air conditioning, is called a hypervisor. 
+
+VM's | virtual servers | virtual instances | instances:
+    - You provision these in the cloud and they are essentially a virtual server that you can use to run your applications and services.
+    - shared or public cloud, you can provision a virtual server in a matter of minutes, and you can scale up or down as needed.
+    - Public VM's are typically used for web servers, databases, and other applications that require a lot of resources.
+    - Private VM's are typically used for development, testing, and other non-production workloads.
+    - Transient VM's are typically used for batch processing, data analysis, and other workloads that don't require a long-term commitment. because they can be terminated by the cloud provider at any time.
+    - Reserved VM's are typically used for long-term workloads that require a long-term commitment. 
+    - Dedicated hosts offer single tennant isolation this means that only your VM's are running on the host and you have full control over the host. This is typically used for compliance and regulatory reasons. but there are also performance and other benefits to using dedicated hosts.
+
+Bare Metal Servers: 
+    - a single tenant, dedicated physical server. In other words, it's dedicated to a single customer. The Cloud provider actually takes the physical server and plugs it into a rack in a data center for customers. 
+    - Cloud providers are responsible for the physical hardware, but customers are responsible for the operating system, applications, and other software.
+    - Takes longer to provision than a VM 
+    - More expensive than a VM
+    - Typically used for workloads that require a lot of resources, such as databases, big data, and other high-performance workloads.
+Secure Networking in the cloud:
+    - In the cloud you use logical instances instead of physical devices.
+    What does that mean?
+    - In the cloud, you use logical instances instead of physical devices. This means that you can create a virtual network that is isolated from the rest of the cloud. This is called a virtual private cloud (VPC).
+    - Group together different parts of your app into different subnets (Front end, backend, DB, etc...), and then use security groups and network access control lists to control traffic between the subnets.
+Containers:
+    - A container in cloud computing is a lightweight, standalone, executable software package that includes everything needed to run a piece of software, including the code, runtime, system tools, libraries, and settings. Containers isolate software from its environment, ensuring that it works uniformly despite differences for instance between development and staging.
+    - Containers are a way to package and run applications in a consistent environment, regardless of the underlying infrastructure. This makes it easier to build, test, and deploy applications, and it also makes it easier to scale and manage applications in the cloud.
+    - Containers are similar to virtual machines, but they are more lightweight and more portable. They are also more efficient, because they share the same operating system kernel, which means they use less memory and CPU than virtual machines.
+    - Containers are typically used for microservices, web applications, and other workloads that require a lot of flexibility and scalability.
+Cloud Storage:
+    - Cloud storage is a way to store data in the cloud, instead of on your local computer or server. This allows you to access your data from anywhere, and it also allows you to scale your storage as needed.
+    - The cost of storage will vary by type but in general, the faster the read / write speed of the storage, the higher the per gigabyte cost
+    - 4 main types of storage: direct attached, file storage, block storage, and object storage
+    - Direct Attached storage, sometimes referred to as ‘Local Storage’, is storage which is presented directly to a cloud-based server and is effectively either within the host server chassis or within the same rack. This storage is fast and normally only used to store a server’s operating system, although it can have other use cases. The main two reasons why direct attached storage is not so great for other uses besides to store the operating system is that it’s typically ‘Ephemeral’ – meaning that it only lasts as long at the compute resource it’s attached to – it cannot be shared with other nodes and while you can use RAID techniques, it’s not as resilient to failure as other types of storage.
+    - File storage is typically presented to compute nodes as ‘NFS Storage’. NFS stands for Network File System and means that the storage is connected to compute nodes over a standard ethernet network. Slower, lower costs, and can be shared between multiple nodes.
+    - Block is presented to compute nodes using high-speed fibre connections, which means that read and write speeds are typically much faster and reliable than with file storage, making block storage suitable for use with databases and other applications where disk speed is important.You typically provision block storage in ‘volumes’, which can then be mounted onto a compute node, which it then effectively sees as another hard drive. Volumes can normally only be mounted onto one compute node at a time.
+    - ‘IOPS’. IOPS stands for ‘Input/Output Operations Per Second’ and relates to the speed of the storage or to put it another way, how quickly data can be read from or written to the storage.
+    - Persistence is a term that is used when provisioning File or Block storage and relates to what happens to the storage once the compute node it is attached to is terminated. If the storage is set to ‘persist’ then it will not be deleted along with the compute node, meaning that it and its data are preserved and available to mount onto another compute node, though you will continue to pay for the storage.
+    - You can also, in some cases, set the storage so that it is automatically deleted with the compute node that it is mounted onto – in this case, as we know, it becomes Ephemeral Storage. Here, you will also stop paying for the storage but you will lose any data unless it is backed up somewhere.
+    - There are several ways to backup data in the cloud but one way to back up both File and Block storage is to take a Snapshot that is the image of the storage, at a particular instant.
+    - Snapshots are usually fast to create (they don’t actually write any data, or rather they create metadata), don’t require downtime and subsequent snapshots record only changes to the data.
+    - They are great for returning storage to the way it was at a particular snapshot, though note, they cannot be used to recover individual files.
+    - The fourth kind of storage is Object storage. This is a different type of storage in so much as it’s not attached to a compute node, rather it is accessed via an API. Of all the storage types, Object Storage is by far the cheapest and also the slowest in terms of read and write speeds, but it is infinite in size to the end user. Unlike File and Block storage where you provision a certain storage capacity and it fills up over time, with Object Storage you can keep adding files to it and it never fills up, you just pay for what you use. This makes Object Storage a fantastic repository for all sorts of unstructured data types, large and small, including documents, video, logs, backups, data from IoT, application binaries and virtual machine images. In the following videos, there will be more detailed information on the different types of storage.
+
+File storage in more detail:
+    - Attached to a compute node 
+    - Less expensive more resilient to failure 
+    - less disk management and maintenance
+    - provision much larger amounts of file storage 
+    - Managed by service provider
+    - mounted to compute nodes via an ethernet network
+    - also referred to as NFS storage
+    - speeds vary
+    - common storage solutions: departmental file shares, Landing zone for incoming files, repository of files for web servers, and application data
+    - IOPS: Input/Output Operations Per Second higher IOPS means faster read and write speeds and costs more
+Block Storage:
+    - attached via high speed fiber network
+    - Breaks files into chunks (or blocks) of data
+    - Stores each block separately under a unique address
+    - must be attached to a compute node 
+    - Mounted from remote storage appliances 
+    - extremely resilient to failure
+    - data is more secure because of encryption in transit and at rest
+    - Higher costs 
+    - but faster read and write speeds
+    - usually mounted on only 1 node at a time 
+    - you can specify the IOPS and the size of the volume 
+    - common storage solutions: databases, high-performance applications, and other workloads that require high-speed disk access
+    - Highly redundant and reliable
+When to choose file or block:
+    - Boot Volumes: Block
+    - Lowest latency: Block
+    - mix of structured and unstructured data: File
+    - share data with many users at once : File
+Object Storage:
+    - Not attached to a compute node
+    - Accessed via an API
+    - less expensive than file or block storage
+    - effectively infinite in size pay per gigabyte
+    Good for: 
+        - unstructured data types
+        - large and small files
+        - documents, video, logs, backups, data from IoT, application binaries, and virtual machine images
+    - you can either store the data in one region or replicate it to multiple regions depending on your needs
+    - Any data that is static and where read and write speeds are not critical
+    - NOT good for: databases, high-performance applications, and other workloads that require high-speed disk access or frequent changes to the data
+Object storage data tiers & API's
+    - buckets will have tiers or classes attached to them that are based on how frequent the data is accessed
+    - standard tier: for frequently accessed data
+    - vault or archive tier: for infrequently accessed data (data is only accessed once or twice a month or less)
+    - cold vault or deep archive tier: for data that is accessed once or twice a year or less
+    - automatically move data between tiers based on access patterns
+    - does not come with IOPS
+    - slower than file or block storage 
+    - data in cold vault or deep archive tier can take hours to retrieve
+    - can be good for backup and disaster recovery
+    - 
+CDN: 
+    - A content delivery network, or CDN, is a distributed server network that delivers temporarily stored, or cached, copies of website content to users, based on the user's geographic location. A CDN stores this content in distributed locations and reduces the distance between your website visitors, and your website server. (Makes your website faster)
+    - A CDN can also help protect your website from DDoS attacks, and it can help you scale your website to handle more traffic.
+    - A CDN can also help you reduce the load on your website server, and it can help you reduce the cost of bandwidth.

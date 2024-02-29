@@ -1,0 +1,42 @@
+DEPLOYMENT MODELS: Deployment models indicate where the infrastructure resides, who owns and manages it, and how cloud resources and services are made available to users.
+- 4 Deployment cloud models are: Public, Private, Community and hybrid
+    
+Cloud computing offers various deployment models, each designed to cater to different organizational needs in terms of control, cost, and privacy. Here's a simple explanation of the four main types:
+
+Private Cloud: This model is like having your own personal cloud. It's a cloud computing environment exclusively used by one organization. It can be hosted internally or by a third-party, but it's maintained on a private network. This offers more control and security, making it ideal for businesses with strict data regulations or those that require high levels of customization. However, it's typically more expensive than other options due to the dedicated resources.
+
+Public Cloud: Imagine a large, shared space where various organizations can rent storage and computing services. This model is provided over the internet by third-party providers (like Amazon Web Services, Google Cloud Platform, or Microsoft Azure), offering scalability and flexibility. It's a cost-effective solution since you pay only for what you use, but since it's shared with others, there might be concerns about data security and less customization.
+
+Community Cloud: This is a collaborative effort where the cloud infrastructure is shared between several organizations from a specific community with common concerns (security, compliance, jurisdiction, etc.). It can be managed internally or by a third-party and hosted internally or externally. This model offers a balance between the shared resources of the public cloud and the control and security of a private cloud, making it suitable for organizations with similar needs and concerns.
+
+Hybrid Cloud: As the name suggests, this model combines elements of both private and public clouds, creating a flexible and versatile environment. Organizations can keep sensitive or critical workloads in their private cloud for security and compliance while using the public cloud for more scalable, variable demands. This approach allows for data and application portability, giving businesses the ability to balance cost, control, and security.
+
+In summary, the choice between private, public, community, and hybrid cloud deployment models depends on an organization's specific needs, including budget, security, compliance requirements, and scalability.
+
+Analogy for a 10 yr old 
+
+Alright! Imagine you have a huge collection of toys, but you don't have enough space in your room to play with them or store them. So, you look for different places where you can keep and play with your toys. This is similar to what businesses do with their data and computer programs. They use something called "cloud" to store and use their stuff. The cloud is not a real cloud in the sky but a bunch of powerful computers somewhere else that you can use through the internet. Now, let's talk about the different "rooms" or places you can keep your toys, which are like the different types of clouds:
+
+Private Cloud: Imagine you have a special room in your house just for your toys. Only you can use this room. This is safe and private, but it costs your parents more money because it's just for you. This is like a private cloud, where a company has its own special computers for its stuff.
+
+Public Cloud: Now, think about a big playground where you and many other kids can bring your toys and play together. This place has lots of toys you can share and play with. It's fun and doesn't cost your parents as much because many kids use it. But, since so many kids are there, you have to be careful with your special toys. This is like a public cloud, where many companies use the same computers to save money.
+
+Community Cloud: Imagine a clubhouse where only you and your friends from school can go to play with your toys because you all like the same games. It's not just for you, but it's not open to everyone, either. This is a bit like having a mix between your own room and the big playground. This is what a community cloud is like, where businesses that need similar things share a cloud.
+
+Hybrid Cloud: This is like having the option to play with some of your toys in your special room, some toys at the playground, and maybe even some toys at the clubhouse with your friends. You can decide where the best place is for each toy. This mix gives you lots of choices on where to play, depending on what you feel like doing. A hybrid cloud is when a company uses a mix of the other three types of clouds to get the best of all worlds.
+
+SUMMARY: 
+In this lesson, you have learned:
+
+Deployment models indicate where the infrastructure resides, who owns and manages it, and how cloud resources and services are made available to users. There are four main deployment models available on the cloud—public, private, hybrid, and community.
+
+In the public cloud model, the service provider owns, manages, provisions, and maintains the physical infrastructure such as data centers, servers, networking equipment, and storage, with users accessing virtualized computing, networking and storage resources as services.
+
+In the private cloud model, the provider provisions the cloud infrastructure for exclusive use by a single organization. The private cloud infrastructure can be internal to the organization and run or on-premises. Or it can be on a public cloud, as in the case of Virtual Private Clouds (VPC), and be owned, managed, and operated by the cloud provider.
+
+In the hybrid cloud model, an organization’s on-premise private cloud and a third-party, public cloud are connected as a single, flexible infrastructure that leverages the features and benefits of both Public and Private clouds.
+
+In the community cloud model, the provider provisions the cloud infrastructure for use by a community of organizations with shared concerns. One or more of the organizations in the community, a third-party provider, or both are responsible for the ownership, management, and operation of this infrastructure.
+
+IBM Cloud Feature Code: 7c867f00296142ae9cdbca6bc2419afa
+account ID: d00fb1a350094a79b5f344283883b9a8

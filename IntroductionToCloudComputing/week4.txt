@@ -1,0 +1,39 @@
+Hybrid Multi Cloud:
+    -  is a computing environment that connects an organization's on-premise private cloud and third-party public cloud into a single infrastructure for running the organization's applications.
+    -  It is a combination of public and private cloud environments, connected by technology that allows data and applications to be shared between them.
+    - Multi cloud is a subset of hybrid cloud, and refers to the use of multiple cloud computing services in a single architecture.
+    -  Hybrid cloud is a subset of multi cloud, and refers to the use of both on-premises resources and cloud resources in a single architecture.
+Microservices:
+    - Microservices architecture is an approach in which a single application is composed of many loosely coupled and independently deployable smaller components or services. These services typically have their own stack running on their own containers. They communicate with one another over a combination of APIs, event streaming, and message brokers.
+    - For a business, what this means is that application components can be developed and updated more efficiently by multiple developers working independently. Teams can use different stacks and runtime environments for different components. Components facing too much load can be scaled independently, reducing the waste and cost associated with having to scale entire applications.\
+Serverless:
+    - Serverless is an approach to computing that offloads responsibility for common infrastructure management tasks such as scaling, scheduling, patching, and provisioning application stacks to cloud providers allowing developers to focus their time and effort on the code and business logic specific to their applications or process.
+    - Serverless computing is a cloud computing execution model in which the cloud provider allocates machine resources on a as-needed basis. The cloud provider runs the server and dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity.
+    - No provisioning of servers or virtual machines is required. Instead, developers can execute code by deploying functions, which are small units of code that are executed in response to specific events. These functions are hosted and maintained by the cloud provider, which also provides the necessary infrastructure to run them.
+    - Pay only for resources being used 
+    - Abstracts the infrastructure away from developers
+    - code is executed as individual functions
+    - no prior execution context is required
+    - use cases for serverless are:
+        - event-driven applications
+        - microservices
+        - real-time file processing
+        - IoT applications
+        - mobile backends
+        - web applications
+        - chatbots
+        - RESTful APIs
+        - image and video processing
+        - data processing
+        - cron jobs (cron jobs are scheduled tasks that run at specific times or intervals on a computer or network. They are often used to automate system maintenance or administration)
+        - webhooks
+        - and more 
+Cloud native applications:
+    - Cloud-native applications are designed to be built and run in the cloud. They are designed to take advantage of cloud computing models, such as microservices, containers, and serverless computing.
+    - Cloud-native applications are designed to be scalable, resilient, and manageable. They are also designed to be continuously delivered and continuously improved.
+DevOps on the cloud:
+    - Development teams need to design, develop, deliver, and run software as reliably and efficiently as possible. 
+    - Operations teams need to identify and resolve problems as soon as possible by monitoring, predicting failure, managing the environment, and fixing issues
+    - DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology.
+Application Modernization:
+    - 
