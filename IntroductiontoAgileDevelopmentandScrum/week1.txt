@@ -1,0 +1,86 @@
+Introduction:
+    - Like DevOps (which is an expansion on agile) is a mindset your have to make cultural change 
+Agile Principles:
+    - Agile is an itterative approach to project management. Work in small increments get feedback from the customer then either pivot (change course) or perserve (continue with what you have)
+    - Agile is a mindset, not a set of rules
+    - Adaptive planning, evolutionary development, early delivery, and continuous improvement, and encourages rapid and flexible response to change
+    - Build what is needed not what is planned
+Methodologies Overview:
+    - Waterfall (traditional) vs Agile
+    - lots of problems with waterfall method (no feedback, no customer involvement, no changes, siloed teams)
+    - Extreme Programming (XP) - a software development methodology which is intended to improve software quality and responsiveness to changing customer requirements
+    - Kanban - a method for managing knowledge work with an emphasis on just-in-time delivery while not overloading the team members
+    - Core principles of Kanban:
+        - Visualize the workflow
+        - Limit work in progress
+        - Focus on flow
+        - Continuous improvement
+Working Agile:
+    - working in small batches 
+    - MVP (minimum viable product) - the smallest thing you can build to get feedback
+    - BDD (behavior driven development) - a software development process that emerged from test-driven development (TDD)
+    - TDD (test driven development) - a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only
+    - Pair programming - two developers working together at one workstation 
+    In more details:
+        - MVP is not phase 1 of a project
+        - its the smallest thing you can build to get feedback. At the end of each MVP you either pivot or perserve
+        - BDD is describing the system from the outside in (what the user sees)
+        - BDD uses a language called Gherkin
+        Gherkin Syntax:
+            - Given, When, Then
+            - Given - the initial state of the system
+            - When - an event occurs
+            - Then - the expected outcome
+        - TDD is testing the system from the inside out (what the system does) Red -> Green -> Refactor
+        - Pair programming is two developers working together at one workstation one writes the code the other reviews it and they switch
+SCRUM Overview:
+    - Scrum is a framework for agile development
+    - Scrum is a process framework that has been used to manage complex product development since the early 1990s
+    - Scrum is not a methodology, it is a framework
+    - A spirnt is one iteration through a design process
+    - every spring has a goal and should usually last 2-4 weeks though 2 weeks is prefered
+    - Scrum Roles:
+        - Desing 
+        - build 
+        - test
+        - deploy
+The 3 roles of SCRUM:
+    - Product Owner - responsible for the product backlog and the prioritization of the work
+    - Scrum Master - responsible for the process and the team
+    - Development Team - responsible for delivering the product
+Artifacts, benefits and events:
+    - Artifacts:
+        - Product Backlog - a list of all desired work on the project
+        - Sprint Backlog - a list of tasks to be completed during the sprint
+        - Increment - the sum of all the product backlog items completed during a sprint
+    Events:
+        - Sprint Planning - a meeting at the beginning of the sprint to plan the work
+        - Daily Scrum - a daily meeting to discuss the work (what was done, what will be done, and any blockers)
+        - Sprint - a period of time where work is completed
+        - Sprint Review - a meeting at the end of the sprint to review the work
+        - Sprint Retrospective - a meeting at the end of the sprint to discuss what went well and what could be improved
+    Benefits:
+        - Higher productivity
+        - Better quality
+        - Reduced time to market
+        - Increased customer satisfaction
+        - Better team dynamics
+        - Happier employees
+Organizational Impact Of Agile:
+    - Organizational change is hard but its necessary
+    - repeat video
+Using ZenHub for the Agile Process:
+    - ZenHub is a project management tool that is integrated with GitHub
+    - ZenHub is a tool that is used to manage the agile process
+    - Its essentially a kanban board that is integrated with GitHub
+    - The cycle is as follows:
+        - New Issue
+        - Icebox
+        - Product Backlog
+        - Sprint Backlog
+        - In Progress
+        - Review/QA
+        - Done
+        - Closed 
+
+
