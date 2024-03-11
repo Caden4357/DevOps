@@ -1,0 +1,63 @@
+Using ZenHub for the Agile Process:
+    - ZenHub is a project management tool that is integrated with GitHub
+    - ZenHub is a tool that is used to manage the agile process
+    - Its essentially a kanban board that is integrated with GitHub
+    - The cycle is as follows:
+        - New Issue
+        - Icebox
+        - Product Backlog
+        - Sprint Backlog
+        - In Progress
+        - Review/QA
+        - Done
+        - Closed 
+Creating good user stories:
+    - User stories are a way to describe the work that needs to be done
+    - it represents a small piece of a businiess value that a team can deliver in an iteration
+    - stories contain a brief description of need and value, any assumptions or details & the definition of done
+    - User stories are written in the following format:
+        - As a <some role>
+        - I need <some function>
+        - So that <some benefit>
+    - List any assumptions document any details that will help the developer 
+    - The definition of done is a list of criteria that must be met for the story to be considered complete
+    - Using Gherkin to determine the acceptance criteria
+    - Written in the following format 
+        - Given <some precondition>
+        - When <some event happens>
+        - Then <some outcome>
+    Sample story:
+        -  As a marketing manager
+        - I need a list of customer names and emails 
+        - So that I can notify them of upcoming sales
+    *Assumptions and details:
+        - We maintain customer emails 
+        - Customer have opted in to receive emails
+    *Definition of done:
+        Given 100 customers in the db
+        and 90 have opted in to recieve emails
+        when I request the customer email list 
+        then I should see a list of 90 customer emails
+    INVEST in good user stories:
+        - Independent
+        - Negotiable
+        - Valuable
+        - Estimable
+        - Small
+        - Testable
+    An EPIC is a large user story that can be broken down into smaller stories
+    - Epics are too large to be completed in a single sprint
+    - Epics are broken down into smaller stories
+Story Points:
+    - A metric to estimate the difficulty of implementing a user story
+    - An abstract measure of overall effort
+    - made up of complexity, uncertainty, and effort
+    - Instead of using time to measure use T-shirt sizes (S, M, L, XL)
+    - But since we cant use that we use fibonacci numbers (1, 2, 3, 5, 8, 13, 21)
+    - typically not all the numbers are used
+    - Storys should be small enough to be completed in a few days 
+Product backlog:
+    - A list of all desired work on the project (not currently being worked on)
+    - Stories are ranked in order of priority
+    - stories are more detailed at the top of the backlog and less detailed at the bottom
+    
