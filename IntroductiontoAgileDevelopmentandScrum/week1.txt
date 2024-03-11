@@ -69,5 +69,16 @@ Artifacts, benefits and events:
 Organizational Impact Of Agile:
     - Organizational change is hard but its necessary
     - repeat video
-
+Backlog Refinement (getting started):
+    - Keep product backlog ranked by priority
+    - break large items into smaller ones
+    - stories at the top of the backlog should be ready for the next sprint
+    - stories at the bottom of the backlog should be rough ideas
+    who should attend backlog refinement:
+        - product owner
+        - scrum master
+        - development team
+        - stakeholders
+    New issue column should be empty at every backlog refinement meeting
+    
 

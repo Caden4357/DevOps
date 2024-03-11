@@ -60,4 +60,20 @@ Product backlog:
     - A list of all desired work on the project (not currently being worked on)
     - Stories are ranked in order of priority
     - stories are more detailed at the top of the backlog and less detailed at the bottom
-    
+Backlog refinement finishing up:
+    - labels help vizualize the work theres standard ones in GitHub
+    - Labels can be used to indicate the type of work that needs to be done (Instructor adds 'technical debt' label)
+    - technical debt is anything you need to do that doesnt involve adding new features (refactoring, bug fixes, etc)
+    - Refine the backlog every sprint
+Sprint Planning:
+    - A meeting where the team decides which stories to work on in the next sprint
+    - The team selects stories from the product backlog and moves them to the sprint backlog
+    - Each sprint should have a clearly defined goal
+    - The team should have a good idea of what they can accomplish in a sprint
+    - The Dev team takes stories from the product backlog and moves them to the sprint backlog, assign story points and labels, ensure theres enough info to get it done, stop adding stories when youve reached the velocity 
+    - the velocity is determined by the number of story points completed in a single sprint by the team 
+    Sprint Milestone:
+        - The Milestone is the sprint itself the overall goal of the sprint
+        - The Milestone is a way to group issues together
+        - It should have a brief title, good desc. and start and end dates 
+        
