@@ -1,0 +1,31 @@
+Workflow for daily plan execution:
+    - Take the next highest priority task from the list assign it to yourself and move it to the "In Progress" column
+    - dont work on more than 1 story at a time 
+    - when done submit a PR and move the task to the "Review"/QA column
+Daily standup:
+    - What did you do yesterday?
+    - What are you planning to do today?
+    - Any blockers?
+    - Any other comments?
+Burndown charts:
+    - We will use the burndown chart to track our progress and make sure we are on track to meet our goals
+    - measurment of how many story points completed vs how many are left
+    - built into ZenHub
+Sprint Review:
+    - Demo time!
+    - show off all the things everyone has been working on the product owner decides if its done or not or if it needs more work or they wanna make adjustments
+    - feedback is turned into product backlog items
+Sprint retrospective
+    - a meeting to reflect on the sprint and identify what went well and what could be improved
+    - what went well?
+    - what didnt go well
+    - what should we change for next time 
+Using measurments effectively:
+    - The top four actionable metrics that people use our mean lead time, right? How long does it take to get from an idea, to get something delivered to the customer? Release frequency, how often can you release? It doesn't have to be any faster than you need to release. If you only need to release once a week, that's fine. But can you release when you need to release something new to the customer and then of course, what is your change failure rate? Right. Are you releasing stuff that's breaking, right? So that's critically important as well. And then mean time to recovery, it used to be mean time to failure, right? We make sure we never fail, make sure it never goes down. Well, It's going to go down, how fast can you recover from it going down as the question. And if it's quick enough and the customer doesn't even notice, that is the best of all. So, mean time to recovery is really what people are measuring as an actionable metric today.
+Agile Anti-patterns:
+    - No real product owner or multiple product owners
+    - teams are to large or to small
+    - teams are not dedicated 
+    - teams are siloed 
+    - not self managing teams 
+    
