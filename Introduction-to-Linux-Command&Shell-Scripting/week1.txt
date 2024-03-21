@@ -1,0 +1,38 @@
+Intro to unix and linux:
+    - An OS is a software that manages hardware resources and allows interaction with the hardware
+    - Unix is an OS that was developed in the 1960s and 1970s at Bell Labs its behind the scenes of many other OSs including Mac OS
+    - Linux is a Unix-like OS that was developed in the 1990s by Linus Torvalds
+    - Linux was developed as a free and open source alternative to Unix 
+    - Linux is most secure, multi user, multi tasking, multi platform, and multi programming OS
+    - Linux is used in servers, supercomputers, and embedded systems
+Linux Distributions:
+    - linux Distributions are different versions of the Linux OS also referred to as distros
+    - Linux kernel is the core of the OS and the distros are built around the kernel
+    - there are hundreds of distros available
+    - some popular distros include Ubuntu, Fedora, Debian and Red Hat
+Overview of linux architecture:
+    - comprised of 5 layers:
+        - UI - Allows users to interact with the OS through a graphical interface or command line
+        - Application - Software that runs on the OS such as web browsers, text editors, programming languages and games
+        - OS - Manages hardware resources and provides services to applications and file management 
+        - Kernel - The core of the OS that interacts with the hardware and manages system resources lowest level of the OS bridge between apps and hardware
+        - Hardware - Physical components of the computer such as CPU, memory, storage, and input/output devices
+    - Filesystem - The way files are organized and stored on the computer 
+Installing software and updates:
+    - Packages:
+        - archive files for installing software or updates
+    -Package manager:
+        - a tool for installing, updating, and removing packages
+        - availablefor different distros
+        - some popular package managers include apt, yum, and dnf
+    Deb and RPM:
+        - packages for linux OS
+    .deb files:
+        - for debian based distros such as debian and ubuntu
+    .rpm files:
+        - for red hat based distros such as fedora and centos
+        - stands for red hat package manager
+    - To convert a .deb file to a .rpm file use the alien command
+    - example:
+        alien <package-name>.rpm (to convert from rpo to deb)
+        alien -r <package-name>.deb (to convert from deb to rpm)
