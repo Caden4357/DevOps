@@ -1,0 +1,8 @@
+Shell scripting basics:
+    - a script is a list of commands that can be ran and interpreted by the shell usually not compiled 
+    - slower than compiled languages but easier to write and debug
+    - good for automating tasks (ETL jobs, file backups and archives & sys admin tasks)
+    - a SHELL script is an executable text file with an interpreter directive aka shebang (#!) at the top of the file
+    - the shebang tells the shell which interpreter to use to run the script
+    - the shebang is followed by the path to the interpreter (e.g. #!/bin/bash)
+    
