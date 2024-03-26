@@ -5,4 +5,44 @@ Shell scripting basics:
     - a SHELL script is an executable text file with an interpreter directive aka shebang (#!) at the top of the file
     - the shebang tells the shell which interpreter to use to run the script
     - the shebang is followed by the path to the interpreter (e.g. #!/bin/bash)
+Filters, Pipes & Variables:
+    - Filters are shell commands which take input from standard input and send output to standard output 
+    - transform input data into output data 
+    - examples are:
+        - wc, cat, more, head, sort, grep and more
+    - Pipes are used to chain filters together ( | <- pipe)
+    - Pipes send the output of one command to the input of the next command ()
+    - ls | sort -r would list the files in reverse order
+    - SHell variables are variables limited to the shell script in which they are defined
+    - var_name=value assigns a value to a variable
+    - $var_name is used to access the value of a variable
+    - variables can be used to store the output of a command
+    - var_name=$(command) assigns the output of a command to a variable
+    - env variables are global variables that are available to all processes
+    - you can extend any shell variable to an env variable by using the export command
+    - export var_name=value
+    - env | grep var_name would show the value of the env variable
+    - env lists all env variables
+Useful features of bash shell:
+    - # comments out a line
+    - ; allows you to run multiple commands on one line example ls -l; pwd would list the files and then print the working directory    
+    - * is a wildcard that matches any character
+    - ? is a wildcard that matches any single character example ls *.txt would list all files ending in .txt
+    - quoting is used to prevent the shell from interpreting special characters
+    - single quotes prevent all interpretation
+    - double quotes prevent interpretation of all characters except $, `, \ and !
+    - backticks are used to execute a command and return the output as a string
+    - I/O redirection is used to change the input and output of a command
+    - > redirects output to a file
+    - < redirects input from a file
+    - >> appends output to a file
+    - 2> redirects error output to a file
+    - 2>&1 redirects error output to the same location as standard output
+    - 2>> appends error output to a file
+    - 2>&1 appends error output to the same location as standard output
+    - Command substitution is used to execute a command and return the output as a string example var=$(ls) would assign the output of the ls command to the variable var or here=$(pwd) would assign the current working directory to the variable here
+    - Command line arguments are used to pass arguments to a shell script
+    - ./script.sh arg1 arg2 would pass arg1 and arg2 to the script script.sh
+    - Batch mode is used to run a script without user interaction runs sequentially synchronous
+    - concurrent mode is used to run a script with user interaction runs in parallel asynchronous
     
