@@ -45,4 +45,13 @@ Useful features of bash shell:
     - ./script.sh arg1 arg2 would pass arg1 and arg2 to the script script.sh
     - Batch mode is used to run a script without user interaction runs sequentially synchronous
     - concurrent mode is used to run a script with user interaction runs in parallel asynchronous
-    
+    - Make script executable with chmod +x script.sh -> chmod u+x rx_poc.sh would make the script executable for the user
+Scheduling Jobs Using Cron:
+    - cron is a time-based job scheduler in Unix-like operating systems
+    - cron jobs are used to schedule commands to run at a specific time
+    - how it works is that the cron daemon reads the crontab file for instructions and executes the commands at the specified time it can execute a bash script or a command
+    - cron jobs are stored in a crontab file
+    - crond is the daemon that runs the cron jobs
+    - crontab -l is used to list the cron jobs
+    - crontab -r is used to remove the cron jobs
+    - crontab -e opens the crontab file in the default editor
