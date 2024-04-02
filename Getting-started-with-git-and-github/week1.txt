@@ -1,0 +1,51 @@
+Overview of git and github
+    - both are version control systems
+    - git is a command line tool that allows you to track changes in your code
+    - github is a website that allows you to store your code in the cloud and collaborate with others
+    - git and github are often used together to manage code and collaborate with others
+    - SSH protocol is used to securely connect to github
+    - repositories: contain project folders
+    - fork: copy of a repository
+    - pull request: to request for review and approval 
+    - working directory: contains files and subdirectories
+    - commit: snapshot of the projects current state
+    - branch: separate line of development
+    - merg: combine changes from one branch to another 
+    - clone: local copy of the remote repository
+    - push: upload changes to the remote repository
+    - pull: download changes from the remote repository
+    - fetch: download changes from the remote repository without merging them
+Introduction to git
+    - git init: initialize a new git repository
+    - git status: check the status of the repository
+    - git add: add files to the staging area
+    - git commit: save changes to the repository
+    - git log: view the commit history
+    - git diff: view the changes between commits
+    - git branch: manage branches
+    - git checkout: switch branches
+    - git merge: merge branches
+    - git clone: clone a remote repository
+    - git push: upload changes to the remote repository
+    - git pull: download changes from the remote repository
+    - git fetch: download changes from the remote repository without merging them
+Branches:
+    - all files are stored in the main branch by default this stores the deployable code 
+    - create a new branch to work on new features or bug fixes
+    - merge the changes back into the main branch when they are ready or into another branch
+    - branches allow you to work on multiple features or bug fixes at the same time without affecting the main branch
+    - the main branch should always contain the deployable code 
+Pull requests: 
+    - request for review and approval of changes
+    - github automatically makes a pul request if you make changes ona branch you do not own 
+The process: 
+    - Main branch is the deployable code
+    - devs create a new branch to work on new features or bug fixes
+    - devs make changes to the branch and commit them
+    - devs push the changes to the remote repository
+    - devs create a pull request to request for review and approval
+    - reviewers review the changes and approve the pull request
+    - devs merge the changes back into the main branch
+    - devs delete the branch
+    - devs pull the changes from the main branch to update their local repository
+    
